@@ -1,3 +1,9 @@
 spring:
   application:
     name: vietqr-subsystem
+
+paypal:
+  client-id: AWMWAMpGX_AQBBX1wv9kdxK48ylcN49y73CfeL8fsxiTrPKQxFUn7laCzTyRd0jdIPIS3nw3hSJhJCGD
+  client-secret: EOOQ37akmC9zldwa956u_sUSm18-pNuMUHaptlXBMaad6c1L77sKWtbNjDY83v1BikxQ3JvvgmKWF8HP
+  mode: sandbox
+  base-url: https://api-m.sandbox.paypal.com

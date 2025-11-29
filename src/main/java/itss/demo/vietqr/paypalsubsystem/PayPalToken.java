@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-class PayPalToken {
+public class PayPalToken {
 
     @JsonProperty("access_token")
     private String accessToken;

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
-class PayPalConfig {
+public class PayPalConfig {
 
     @Getter
     @Value("${paypal.client-id}")

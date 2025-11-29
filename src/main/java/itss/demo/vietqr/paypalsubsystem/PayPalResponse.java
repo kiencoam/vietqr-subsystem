@@ -3,7 +3,7 @@ package itss.demo.vietqr.paypalsubsystem;
 import lombok.Data;
 
 @Data
-class PayPalResponse {
+public class PayPalResponse {
 
     private String id;
     private String intent;
@@ -11,7 +11,7 @@ class PayPalResponse {
     private Links[] links;
 
     @Data
-    static class Links {
+    public static class Links {
         private String href;
         private String rel;
         private String method;

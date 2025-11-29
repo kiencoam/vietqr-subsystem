@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @Builder
-class PayPalRequest {
+public class PayPalRequest {
 
     private String intent;
 
@@ -18,19 +18,19 @@ class PayPalRequest {
 
     @Data
     @Builder
-    static class PaymentSource {
+    public static class PaymentSource {
         private Paypal paypal;
 
         @Data
         @Builder
-        static class Paypal {
+        public static class Paypal {
 
             @JsonProperty("experience_context")
             private ExperienceContext experienceContext;
 
             @Data
             @Builder
-            static class ExperienceContext {
+            public static class ExperienceContext {
 
                 @JsonProperty("return_url")
                 private String returnUrl;
@@ -46,12 +46,12 @@ class PayPalRequest {
 
     @Data
     @Builder
-    static class PurchaseUnits {
+    public static class PurchaseUnits {
         private Amount amount;
 
         @Data
         @Builder
-        static class Amount {
+        public static class Amount {
 
             @JsonProperty("currency_code")
             private String currencyCode;
@@ -60,6 +60,5 @@ class PayPalRequest {
             private String value;
         }
     }
-
 
 }
